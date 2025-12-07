@@ -10,7 +10,8 @@
 \usepackage{xspace}
 
 \newcommand{\myname}{AUTHOR Dummy}
-\renewcommand {\myname} {Dummy \textsc{Author}\xspace}
+
+\renewcommand {\myname} {{\bfseries Dummy} \textsc{Author}\xspace}
 
 \title{\emph{Généalogie}}
 \author{Dummy}
@@ -18,9 +19,11 @@
 
 \begin{document}
 \maketitle
+
 Je m’appelle \myname. \\
-— \myname est le fils de Hello \textsc{Author}.\\
-— \myname est le petit-fils de Friend \textsc{Author}.\\
-— Ros \textsc{Chill} est le neveu de \myname.\\
-— Funny \textsc{Chill} est le petit frère de Ros \textsc{Chill}  et donc également le neveu de \myname.
+— \myname est le fils de {\bfseries Hello} \textsc{Author}.\\
+— \myname est le petit-fils de {\bfseries Friend} \textsc{Author}.\\
+— {\bfseries Ros} \textsc{Chill} est le neveu de \myname.\\
+— {\bfseries Funny} \textsc{Chill} est le petit frère de {\bfseries Ros} \textsc{Chill}  et donc également le neveu de \myname.
+
 \end{document}
