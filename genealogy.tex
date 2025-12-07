@@ -10,8 +10,11 @@
 \usepackage{xspace}
 
 \newcommand{\myname}{AUTHOR Dummy}
-
 \renewcommand {\myname} {{\bfseries Dummy} \textsc{Author}\xspace}
+
+\newcommand{\mystyle}[2][]{{#1 #2}}
+
+\newcommand{\name}[2]{\mystyle[\bfseries]{#1} \mystyle[\scshape]{#2}}
 
 \title{\emph{Généalogie}}
 \author{Dummy}
@@ -21,9 +24,12 @@
 \maketitle
 
 Je m’appelle \myname. \\
-— \myname est le fils de {\bfseries Hello} \textsc{Author}.\\
-— \myname est le petit-fils de {\bfseries Friend} \textsc{Author}.\\
-— {\bfseries Ros} \textsc{Chill} est le neveu de \myname.\\
-— {\bfseries Funny} \textsc{Chill} est le petit frère de {\bfseries Ros} \textsc{Chill}  et donc également le neveu de \myname.
+— \myname est le fils de \name{Hello}{Author}.\\
+— \myname est le petit-fils de \name{Friend}{Author}.\\
+— \name{Ros}{Chill} est le neveu de \myname.\\
+— \name{Funny}{Chill} est le petit frère de \name{Ros}{Chill}  et donc également le neveu de \myname.\\
+
+Ça,\mystyle[\bfseries\slshape]{c’est} du\mystyle[\scshape\large]{style}!
+
 
 \end{document}
