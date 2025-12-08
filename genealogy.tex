@@ -8,13 +8,14 @@
 \usepackage{amsthm}
 \usepackage{upquote}
 \usepackage{xspace}
+\usepackage{xcolor}
 
 \newcommand{\myname}{AUTHOR Dummy}
-\renewcommand {\myname} {{\bfseries Dummy} \textsc{Author}\xspace}
+\renewcommand {\myname} {\name{Dummy}{Author}\xspace}
 
 \newcommand{\mystyle}[2][]{{#1 #2}}
 
-\newcommand{\name}[2]{\mystyle[\bfseries]{#1} \mystyle[\scshape]{#2}}
+\newcommand{\name}[2]{\mystyle[\color{gray}\bfseries]{#1} \mystyle[\color{blue}\scshape]{#2}}
 
 \title{\emph{Généalogie}}
 \author{Dummy}
