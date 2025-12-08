@@ -15,7 +15,10 @@
 
 \newcommand{\mystyle}[2][]{{#1 #2}}
 
-\newcommand{\name}[2]{\mystyle[\color{gray}\bfseries]{#1} \mystyle[\color{blue}\scshape]{#2}}
+\newcommand{\name}[2]{\mystyle[\color{firstnamecolor}\bfseries]{#1} \mystyle[\color{lastnamecolor}\scshape]{#2}}
+
+\colorlet{firstnamecolor}{gray}
+\colorlet{lastnamecolor}{blue}
 
 \title{\emph{Généalogie}}
 \author{Dummy}
